@@ -10,7 +10,8 @@ cd 610-009981-032\_SW\_PTK\_7.3.1\_Client\_RevA/SDKs/Linux64/
 
 1. PTK 설치파일 실행
 
-[root@localhost Linux64]# ./safeNet-install.sh![](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.001.png)
+[root@localhost Linux64]# ./safeNet-install.sh
+![](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.001.png)
 
 Y를 눌러서 install 실행
 
@@ -24,9 +25,7 @@ Y를 눌러서 install 실행
 
 1. 프로그램 다운로드 순서는 4번(HSM Access Provider), 6번,7번,8번,9번 순서로 설치
 1. 설치 후 b를 눌러 뒤로 나오기\
-   ![텍스트, 스크린샷, 소프트웨어, 디스플레이이(가) 표시된 사진
-
-AI 생성 콘텐츠는 정확하지 않을 수 있습니다.](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.004.png)\
+   ![](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.004.png)\
    (뒤로 나온 후 화면)
 1. 설정창 5번 선택 후 Cryptoki Provider 설정 확![](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.005.png)
 
@@ -54,27 +53,19 @@ Vi et\_hsm 으로 PSE에 설정된 ip 값 입력
 
 1. ctconf -v 정상적으로 호출되는지 확인
 
-![텍스트, 스크린샷, 소프트웨어이(가) 표시된 사진
-
-AI 생성 콘텐츠는 정확하지 않을 수 있습니다.](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.009.png)
+![](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.009.png)
 
 1. gctadmin 입력 후 slot initializing 진행
 
-![텍스트, 스크린샷, 소프트웨어, 디스플레이이(가) 표시된 사진
-
-AI 생성 콘텐츠는 정확하지 않을 수 있습니다.](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.010.png)
+![](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.010.png)
 
 1. ctkmu t -s<슬롯넘버> -l<label> 명령어로 slot initializing 진행
 
-![텍스트, 스크린샷, 폰트이(가) 표시된 사진
-
-AI 생성 콘텐츠는 정확하지 않을 수 있습니다.](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.011.png)
+![](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.011.png)
 
 (이니셜라이징 하기 전 ctkmu l 명령어로 기존 오브젝트들을 조회한 결과)
 
-![텍스트, 스크린샷, 폰트이(가) 표시된 사진
-
-AI 생성 콘텐츠는 정확하지 않을 수 있습니다.](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.012.png)
+![](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.012.png)
 
 (ctkmu t -s<슬롯넘버> -l<label> 명령어로 이니셜라이징 후 ctkmu l 로 슬롯 오브젝트를 조회하였을 때 캡쳐본)
 
@@ -100,21 +91,15 @@ Ex) ctkmu c -t <key\_type> -n <label> -a <attribute> -s<슬롯지정>
 
 -s : 특정 슬롯 지정 (여러 슬롯 있는 경우)
 
-![텍스트, 스크린샷, 폰트이(가) 표시된 사진
-
-AI 생성 콘텐츠는 정확하지 않을 수 있습니다.](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.014.png)
+![](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.014.png)
 
 1. 오브젝트(키) 조회하기
    1. 오브젝트 조회(ctkmu l -s<슬롯지정>)
 
-![텍스트, 스크린샷, 폰트이(가) 표시된 사진
-
-AI 생성 콘텐츠는 정확하지 않을 수 있습니다.](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.015.png)
+![](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.015.png)
 
 1. 오브젝트 조회(kmu)
 
-![텍스트, 스크린샷, 디스플레이, 소프트웨어이(가) 표시된 사진
-
-AI 생성 콘텐츠는 정확하지 않을 수 있습니다.](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.016.png)
+![](Aspose.Words.fbc784eb-beca-442f-9864-8296860276ae.016.png)
 
 슬롯 지정하여 유저핀으로 로그인 후 화면
